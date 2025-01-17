@@ -14,24 +14,26 @@ header {
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-main{
+
+main {
     gap: 20px;
     display: flex;
     flex-direction: column;
     padding: 16px 0px 16px 0px;
     width: 100%;
-  }
+}
 
 nav {
     margin-top: 15px;
 }
+
 h2 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 2rem;
     border-bottom: 2px solid #343a40;
     padding-bottom: 10px;
-  }
+}
 
 nav a {
     color: #ffc107;
@@ -51,12 +53,13 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-  }
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: auto;
     padding: 16px;
-  }
+}
 
 /* Hero Section */
 .hero {
@@ -147,14 +150,14 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-  
-  ul li {
+}
+
+ul li {
     background: #e9ecef;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-  }
+}
 
 footer {
     background: #333;
@@ -162,10 +165,116 @@ footer {
     text-align: center;
     padding: 16px 0;
 }
+.worked-with>ul>li:hover{
+    background: #709c9e;
+}
+.worked-with .brand-logo {
+    height: 30px;
+    margin-bottom: -10px;
+    margin-right: 8x;
+}
+.worked-with .brand-name{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.worked-with .brand-content{
+    padding-left: 36px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+.worked-with .brand-shadow-image{
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+.worked-with .brand-content-image-layout{
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    background-color: #33333345;
+    width: fit-content;
+    padding: 4px 4px;
+    border-radius: 8px;
+}
+.worked-with .brand-shadow-button{
+    position: absolute;
+    top: 18px;
+    align-self: center;
+    justify-self: center;
+    right: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color:#709c9ec8;
+}
+.worked-with .brand-content-image-layout .brand-content-image{
+    position: relative;
+    height: 50px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
+}
 
+.worked-with .brand-content li,
+.worked-with .brand-content ul{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
 footer p {
     margin: 0;
     font-size: small;
+}
+
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background: rgb(84, 84, 84);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+}
+
+.dialog-images img {
+    max-width: 250px;
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0 10px;
 }
 
 /* Mobile Responsive Styles */
@@ -186,7 +295,8 @@ footer p {
         text-align: center;
         padding: 0.75rem 0px;
     }
-    .container{
+
+    .container {
         margin: 0;
         width: unset;
     }
